@@ -1,7 +1,7 @@
 import React from "react";
-import { Wrapper } from "./Wrapper";
-import { Header } from "./Header";
-import { Content } from "./Content";
+import { Wrapper } from "../Wrapper";
+import { Header } from "../Header";
+import { Content } from "../Content";
 
 export const DressCode = () => {
   return (
