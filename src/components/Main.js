@@ -8,6 +8,7 @@ import { Camp } from './main/Camp';
 import { DressCode } from './main/DressCode';
 import { Flowers } from './main/Flowers';
 import { Gifts } from './main/Gifts';
+import { Timer } from '../components/Timer';
 
 export const Main = () => {
   return (
@@ -20,14 +21,13 @@ export const Main = () => {
       <Alco />
       <Actions />
       <Place />
+      <Timer />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  width: 100vh;
-
-  padding: 0 3rem;
+  width: 100vw;
 
   display: flex;
   flex-direction: column;

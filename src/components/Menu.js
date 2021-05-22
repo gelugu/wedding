@@ -27,8 +27,6 @@ const Nav = styled.nav`
   width: 100vw;
   height: 10vh;
 
-  margin-bottom: 5vh;
-
   background-color: ${colors.sage};
 
   display: flex;

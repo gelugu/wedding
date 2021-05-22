@@ -1,15 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import {Parallax} from '../Parallax'
 
 export const Invite = () => {
   return (
-    <Wrapper className="invite">
-      <p>Приглашаем на свадьбу</p>
-      <Names>Злата и Михаил</Names>
-      <p>Будем очень рады видеть вас в этот чудесный день</p>
-    </Wrapper>
-  )
-}
+    <Parallax img="bg-invite.jpg">
+      <Wrapper className="invite">
+        <p>Приглашаем на свадьбу</p>
+        <p>{window.pageYOffset * 0.5}</p>
+        <Names>Злата и Михаил</Names>
+        <p>Будем очень рады видеть вас в этот чудесный день</p>
+      </Wrapper>
+    </Parallax>
+  );
+};
 
 const Wrapper = styled.div`
   width: 60vh;
@@ -24,6 +28,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-`
+`;
 
-const Names = styled.h2``
+const Names = styled.h2``;

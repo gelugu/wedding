@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { Main } from './components/Main';
 import { Menu } from './components/Menu'
-import { Timer } from './components/Timer';
 import { colors } from './styleConfig';
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
     <AppDiv>
       <Menu />
       <Main />
-      <Timer />
     </AppDiv>
   );
 }
