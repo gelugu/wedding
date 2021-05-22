@@ -7,7 +7,6 @@ export const Invite = () => {
     <Parallax img="bg-invite.jpg">
       <Wrapper className="invite">
         <p>Приглашаем на свадьбу</p>
-        <p>{window.pageYOffset * 0.5}</p>
         <Names>Злата и Михаил</Names>
         <p>Будем очень рады видеть вас в этот чудесный день</p>
       </Wrapper>
