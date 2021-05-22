@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { Wrapper } from "./Wrapper";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -35,7 +35,7 @@ export const Timer = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <Wrapper>
+    <Wrapper style={{ flexDirection: "row", justifyContent: "space-around" }}>
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#7E2E84"]]}
@@ -88,13 +88,3 @@ export const Timer = () => {
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  width: 100vh;
-
-  padding: 3vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;

@@ -24,10 +24,8 @@ export const Menu = () => {
 };
 
 const Nav = styled.nav`
+  background-color: none;
   width: 100vw;
-  height: 10vh;
-
-  background-color: ${colors.sage};
 
   display: flex;
   align-self: center;
@@ -36,5 +34,10 @@ const Nav = styled.nav`
 
 const Element = styled.button`
   background-color: inherit;
+  color: ${colors.lavenderLight};
+  mix-blend-mode: difference;
+
   border: none;
+
+  font-size: 1.5rem;
 `;
