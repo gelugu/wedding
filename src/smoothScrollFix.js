@@ -5,7 +5,7 @@
  * 2016 (c) Dustan Kasten, Jeremias Menichelli - MIT License
  */
 
-export const smoothScrollFix = () => (function(w, d, undefined) {
+export const smoothScrollFix = () => (function(w, d, undefinedBehavior) {
   /*
    * aliases
    * w: window global object
@@ -72,7 +72,7 @@ export const smoothScrollFix = () => (function(w, d, undefined) {
     function shouldBailOut(x) {
       if (typeof x !== 'object'
             || x === null
-            || x.behavior === undefined
+            || x.behavior === undefinedBehavior
             || x.behavior === 'auto'
             || x.behavior === 'instant') {
         // first arg not an object/null
