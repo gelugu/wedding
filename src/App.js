@@ -2,7 +2,6 @@ import React from 'react'
 import styled, {createGlobalStyle} from 'styled-components'
 import { Main } from './components/Main';
 import { Menu } from './components/Menu'
-import { colors } from './styleConfig';
 
 function App() {
   return (

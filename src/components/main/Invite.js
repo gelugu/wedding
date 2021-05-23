@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Parallax} from '../Parallax'
+// import {Parallax} from '../Parallax'
 
 export const Invite = () => {
   return (
