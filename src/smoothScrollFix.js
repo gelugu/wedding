@@ -6,8 +6,6 @@
  */
 
 export const smoothScrollFix = () => (function(w, d, undefined) {
-  'use strict';
-
   /*
    * aliases
    * w: window global object
