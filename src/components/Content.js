@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { colors } from '../styleConfig'
+import styled from "styled-components";
+import { colors } from "../styleConfig";
 
-export const Content = styled.div`
+export const Content = styled.p`
   width: 50vw;
 
   font-size: 1.3rem;
@@ -9,4 +9,4 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-`
+`;

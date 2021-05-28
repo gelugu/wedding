@@ -8,4 +8,4 @@ export const colors = {
   blue: "#98a4b0",
   caramel: "#92704d",
   coffee: "#af9270",
-}
+};

@@ -10,9 +10,9 @@ export const Menu = () => {
     let topChange = document.querySelector(".dressCode").offsetTop;
 
     if (top > topChange) {
-      setOffsetY("ff")
+      setOffsetY("ff");
     } else {
-      setOffsetY("00")
+      setOffsetY("00");
     }
   };
 

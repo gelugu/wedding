@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-import { colors } from '../styleConfig';
+import styled from "styled-components";
+import { colors } from "../styleConfig";
 
 export const Block = styled.div`
-
   margin: 5vh;
   padding: 5vh;
 
