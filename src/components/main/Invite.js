@@ -7,7 +7,7 @@ import { Wrapper } from "../Wrapper";
 
 export const Invite = () => {
   return (
-    <Parallax img="bg-invite.jpg">
+    <Parallax img="invite.jpg">
       <Wrapper className="invite">
         <Block className="invite">
           <Content>
