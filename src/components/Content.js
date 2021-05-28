@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../styleConfig";
 
 export const Content = styled.p`
   width: 50vw;
