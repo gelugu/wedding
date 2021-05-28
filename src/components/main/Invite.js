@@ -7,7 +7,7 @@ export const Invite = () => {
     <Parallax img="bg-invite.jpg">
       <Wrapper className="invite">
         <p>Приглашаем на свадьбу</p>
-        <Names>Злата и Михаил</Names>
+        <Names>Злата и Миша</Names>
         <p>Будем очень рады видеть вас в этот чудесный день</p>
       </Wrapper>
     </Parallax>
