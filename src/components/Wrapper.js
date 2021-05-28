@@ -5,8 +5,6 @@ export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
 
-  padding: 0 20vw;
-
   background-color: ${colors.cream};
 
   display: flex;

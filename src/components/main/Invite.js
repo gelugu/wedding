@@ -32,3 +32,5 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
+
+const Names = styled.h2``;
