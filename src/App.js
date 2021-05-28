@@ -26,7 +26,7 @@ const AppDiv = styled.div`
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    font-family: 'Courier', 'Helvetica Neue', sans-serif;
+    font-family: "Courier new", 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${colors.cream};
