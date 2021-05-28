@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {createGlobalStyle} from 'styled-components'
 import { Main } from './components/Main';
 import { Menu } from './components/Menu'
+import { colors } from './styleConfig';
 
 function App() {
   return (
@@ -28,9 +29,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Courier', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url(${process.env.PUBLIC_URL + "bg-invite.jpg"});
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: ${colors.cream};
   }
 
   code {

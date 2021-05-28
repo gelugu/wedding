@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-// import {Parallax} from '../Parallax'
+import { Parallax } from "../Parallax";
 
 export const Invite = () => {
   return (
-    // <Parallax img="bg-invite.jpg">
+    <Parallax img="bg-invite.jpg">
       <Wrapper className="invite">
         <p>Приглашаем на свадьбу</p>
         <Names>Злата и Михаил</Names>
         <p>Будем очень рады видеть вас в этот чудесный день</p>
       </Wrapper>
-    // </Parallax>
+    </Parallax>
   );
 };
 

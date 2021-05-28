@@ -12,7 +12,7 @@ import { Timer } from '../components/Timer';
 
 export const Main = () => {
   return (
-    <Wrapper>
+    <Wrapper className="main">
       <Invite />
       <DressCode />
       <Camp />

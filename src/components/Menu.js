@@ -1,8 +1,29 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useEffect, useState } from "react";
+import styled, { css } from "styled-components";
 import { colors } from "../styleConfig";
 
 export const Menu = () => {
+  const [offsetY, setOffsetY] = useState("00");
+
+  const getOffsetY = () => {
+    let top = document.querySelector(".main").scrollTop;
+    let topChange = document.querySelector(".dressCode").offsetTop;
+
+    if (top > topChange) {
+      setOffsetY("ff")
+    } else {
+      setOffsetY("00")
+    }
+  };
+
+  useEffect(() => {
+    document.querySelector(".main").addEventListener("scroll", getOffsetY);
+
+    return () => {
+      document.querySelector(".main").addEventListener("scroll", getOffsetY);
+    };
+  }, []);
+
   const goToElement = (element) => {
     document
       .querySelector(`.${element}`)
@@ -10,7 +31,7 @@ export const Menu = () => {
   };
 
   return (
-    <Nav>
+    <Nav className="menu" top={offsetY}>
       <Element onClick={goToElement.bind(null, "invite")}>Что?</Element>
       <Element onClick={goToElement.bind(null, "dressCode")}>В чём?</Element>
       <Element onClick={goToElement.bind(null, "camp")}>Ночуем?</Element>
@@ -24,7 +45,10 @@ export const Menu = () => {
 };
 
 const Nav = styled.nav`
-  background-color: none;
+  position: absolute;
+  ${(props) => css`
+    background-color: ${colors.cream + props.top};
+  `}
   width: 100vw;
 
   display: flex;
@@ -35,7 +59,6 @@ const Nav = styled.nav`
 const Element = styled.button`
   background-color: inherit;
   color: ${colors.lavenderLight};
-  mix-blend-mode: difference;
 
   border: none;
 
