@@ -9,8 +9,8 @@ export const Invite = () => {
   return (
     <Parallax img="invite.jpg">
       <Wrapper className="invite">
-        <Block className="invite">
-          <Content>
+        <Content>
+          <Block className="invite">
             <p>Привет! Это</p>
             <Header>Злата и Миша</Header>
             <p>и мы приглашаем вас на нашу свадьбу!</p>
@@ -19,8 +19,8 @@ export const Invite = () => {
               Ниже вы найдёте всю информацию, которая позволит вам разделить с
               нами этот чудесный день в максимально комфортной обстановке.
             </p>
-          </Content>
-        </Block>
+          </Block>
+        </Content>
       </Wrapper>
     </Parallax>
   );
