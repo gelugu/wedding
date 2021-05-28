@@ -2,8 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../styleConfig'
 
 export const Wrapper = styled.div`
-  width: 100vh;
-  min-height: 30vh;
+  width: 100vw;
 
   padding: 0 20vw;
 

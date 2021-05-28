@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Wrapper } from "../Wrapper";
 import { Header } from "../Header";
 import { colors } from "../../styleConfig";
+import { Content } from "../Content";
 
 export const Gifts = () => {
   const wishlistLink =
@@ -39,12 +40,6 @@ export const Gifts = () => {
     </Wrapper>
   );
 };
-
-const Content = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
 
 const Image = styled.img`
   width: 20vh;

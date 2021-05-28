@@ -25,6 +25,7 @@ const AppDiv = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   body {
+    width: 100vw;
     margin: 0;
     font-family: "Courier new", 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
