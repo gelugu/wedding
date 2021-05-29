@@ -8,7 +8,7 @@ function App() {
   return (
     <AppDiv>
       <GlobalStyle />
-      <Menu />
+      {/* <Menu /> */}
       <Main />
     </AppDiv>
   );
@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${colors.cream};
+
+    color: ${colors.text};
   }
 
   code {

@@ -5,7 +5,7 @@ export const Block = styled.div`
   margin: 5vh;
   padding: 5vh;
 
-  background-color: ${colors.cream}aa;
+  background-color: ${colors.cream}cc;
 
   display: flex;
   flex-direction: column;
