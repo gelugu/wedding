@@ -7,7 +7,7 @@ import { Parallax } from "../Parallax";
 
 export const Flowers = () => {
   return (
-    <Parallax img="flowers.jpg">
+    <Parallax img="flowers.jpg" startPosition={20} scrollSpeed={40}>
       <Wrapper className="flowers">
         <Block>
           <Header>Почему не надо цветов?</Header>
