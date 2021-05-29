@@ -1,5 +1,7 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import styled from "styled-components";
+import { colors } from "../styleConfig";
 import { Content } from "./Content";
 import { Wrapper } from "./Wrapper";
 
@@ -15,10 +17,10 @@ const timerProps = {
 
 const renderTime = (dimension, time) => {
   return (
-    <div className="time-wrapper">
-      <div className="time">{time}</div>
+    <TimeWrapper>
+      <div>{time}</div>
       <div>{dimension}</div>
-    </div>
+    </TimeWrapper>
   );
 };
 
@@ -40,7 +42,7 @@ export const Timer = () => {
       <Content>
         <CountdownCircleTimer
           {...timerProps}
-          colors={[["#7E2E84"]]}
+          colors={[[colors.khaki]]}
           duration={daysDuration}
           initialRemainingTime={remainingTime}
         >
@@ -50,7 +52,7 @@ export const Timer = () => {
         </CountdownCircleTimer>
         <CountdownCircleTimer
           {...timerProps}
-          colors={[["#D14081"]]}
+          colors={[[colors.lavender]]}
           duration={daySeconds}
           initialRemainingTime={remainingTime % daySeconds}
           onComplete={(totalElapsedTime) => [
@@ -63,7 +65,7 @@ export const Timer = () => {
         </CountdownCircleTimer>
         <CountdownCircleTimer
           {...timerProps}
-          colors={[["#EF798A"]]}
+          colors={[[colors.coffee]]}
           duration={hourSeconds}
           initialRemainingTime={remainingTime % hourSeconds}
           onComplete={(totalElapsedTime) => [
@@ -76,7 +78,7 @@ export const Timer = () => {
         </CountdownCircleTimer>
         <CountdownCircleTimer
           {...timerProps}
-          colors={[["#218380"]]}
+          colors={[[colors.blue]]}
           duration={minuteSeconds}
           initialRemainingTime={remainingTime % minuteSeconds}
           onComplete={(totalElapsedTime) => [
@@ -91,3 +93,10 @@ export const Timer = () => {
     </Wrapper>
   );
 };
+
+const TimeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
