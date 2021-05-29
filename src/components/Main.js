@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Invite } from "./main/Invite";
-import { Place } from "./main/Place";
 import { Actions } from "./main/Actions";
 import { Alco } from "./main/Alco";
 import { Camp } from "./main/Camp";
@@ -20,7 +19,6 @@ export const Main = () => {
       <Flowers />
       <Alco />
       <Actions />
-      <Place />
       <Timer />
     </Wrapper>
   );
