@@ -45,7 +45,7 @@ export const Parallax = ({
 
   return (
     <Wrapper img={img} ref={wrapperRef}>
-      {children}
+      <ParallaxContent>{children}</ParallaxContent>
     </Wrapper>
   );
 };
@@ -55,12 +55,16 @@ const Wrapper = styled.div`
   background-attachment: fixed;
   background-repeat: no-repeat;
 
-  width: 100vw;
-
-  display: flex;
-  justify-content: center;
-
   ${(props) => css`
     background-image: url(${process.env.PUBLIC_URL + props.img});
   `}
 `;
+
+const ParallaxContent = styled.div`
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+
+`
