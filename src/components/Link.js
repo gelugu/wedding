@@ -8,7 +8,7 @@ export const Link = styled.a`
   background-color: transparent;
 }
 :visited {
-  color: ${colors.sage};
+  color: ${colors.caramel};
   background-color: transparent;
   text-decoration: none;
 }
