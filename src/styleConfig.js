@@ -10,5 +10,5 @@ export const colors = {
   coffee: "#af9270",
 };
 
-export const mediaMobile = "only screen and (max-width:320px)"
-export const mediaFull = "only screen and (min-width:320px)"
+export const mediaMobile = "only screen and (max-width:860px)"
+export const mediaFull = "only screen and (min-width:860px)"
