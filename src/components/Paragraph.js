@@ -6,6 +6,8 @@ export const Paragraph = styled.p`
 
   padding-bottom: 2rem;
 
+  text-align: center;
+
   @media ${mediaMobile} {
     font-size: 1rem;
   }
