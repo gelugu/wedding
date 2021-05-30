@@ -94,7 +94,7 @@ export const Timer = () => {
 };
 
 const TimerWrapper = styled.div`
-  height: 70vh;
+  height: 40vh;
   width: 50vw;
 
   display: flex;

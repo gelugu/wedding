@@ -27,7 +27,7 @@ export const Gifts = () => {
         <Row>
           {createLink(
             <Image
-              src={process.env.PUBLIC_URL + "qr-code.svg"}
+              src={process.env.PUBLIC_URL + "qr-code-gift.svg"}
               alt="WishList"
             ></Image>
           )}

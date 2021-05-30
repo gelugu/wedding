@@ -8,6 +8,7 @@ import { DressCode } from "./main/DressCode";
 import { Flowers } from "./main/Flowers";
 import { Gifts } from "./main/Gifts";
 import { Timer } from "../components/Timer";
+import { Chat } from "./main/Chat";
 
 export const Main = () => {
   return (
@@ -19,6 +20,7 @@ export const Main = () => {
       <Flowers />
       <Alco />
       <Actions />
+      <Chat />
       <Timer />
     </Wrapper>
   );
