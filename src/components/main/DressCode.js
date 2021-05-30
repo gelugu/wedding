@@ -10,6 +10,7 @@ export const DressCode = () => {
     <Wrapper className="dressCode">
       <Content>
         <Header>Что надеть?</Header>
+        <Palette src={process.env.PUBLIC_URL + "/palette.jpeg"}></Palette>
         <Paragraph>
           Это — палитра нашего праздника. Нежные, пастельные природные цвета с
           акцентными деревом, золотом и стеклом. Пожалуйста, подберите себе
@@ -24,7 +25,6 @@ export const DressCode = () => {
           атрибутами калечащей обувки. Костюмы, платья и лесные тропинки отлично
           сочетаются с кедами!
         </Paragraph>
-        <Palette src={process.env.PUBLIC_URL + "/palette.jpeg"}></Palette>
       </Content>
     </Wrapper>
   );
