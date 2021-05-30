@@ -7,7 +7,6 @@ function App() {
   return (
     <AppDiv>
       <GlobalStyle />
-      {/* <Menu /> */}
       <Main />
     </AppDiv>
   );
@@ -23,12 +22,16 @@ const AppDiv = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    width: 100vw;
+  * {
     margin: 0;
+    padding: 0;
+  }
+
+  body {
     font-family: "Courier new", 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
     background-color: ${colors.cream};
 
     color: ${colors.text};

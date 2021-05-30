@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Wrapper } from "../Wrapper";
 import { Header } from "../Header";
-import { colors } from "../../styleConfig";
 import { Content } from "../Content";
+import { Link } from '../Link'
+import { Paragraph } from "../Paragraph";
+import { mediaFull } from "../../styleConfig";
 
 export const Gifts = () => {
   const wishlistLink =
@@ -13,59 +15,50 @@ export const Gifts = () => {
     "edit?usp=sharing";
 
   const createLink = (children) => (
-    <WishlistLink href={wishlistLink} target="_blank" rel="noopener noreferrer">
+    <Link href={wishlistLink} target="_blank" rel="noopener noreferrer">
       {children}
-    </WishlistLink>
+    </Link>
   );
 
   return (
     <Wrapper className="gifts">
-      <Header>Что подарить?</Header>
       <Content>
-        {createLink(
-          <Image
-            src={process.env.PUBLIC_URL + "qr-code.svg"}
-            alt="WishList"
-          ></Image>
-        )}
-        <Paragraph>
-          Вот {createLink("тут")} – наш вишлист. Пожалуйста, записывайте свои
-          имена напротив подарка, чтобы не дарить одно и то же. А еще можно с
-          кем-нибудь объединиться и подарить штуки вскладчину. Мы не будем
-          подглядывать, честно! Если у вас не так много денег, пожалуйста, не
-          стесняйтесь дарить нам песни, улыбки и проведённое вместе время❤️
-        </Paragraph>
+        <Header>Что подарить?</Header>
+        <Row>
+          {createLink(
+            <Image
+              src={process.env.PUBLIC_URL + "qr-code.svg"}
+              alt="WishList"
+            ></Image>
+          )}
+          <Paragraph>
+            Вот {createLink("тут")} – наш вишлист. Пожалуйста, записывайте свои
+            имена напротив подарка, чтобы не дарить одно и то же. А еще можно с
+            кем-нибудь объединиться и подарить штуки вскладчину. Мы не будем
+            подглядывать, честно! Если у вас не так много денег, пожалуйста, не
+            стесняйтесь дарить нам песни, улыбки и проведённое вместе время❤️
+          </Paragraph>
+        </Row>
       </Content>
     </Wrapper>
   );
 };
 
-const Image = styled.img`
-  width: 20vh;
-  margin-right: 5rem;
+const Row = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ${mediaFull} {
+    flex-direction: row;
+  }
 `;
 
-const Paragraph = styled.p``;
+const Image = styled.img`
+  width: 20vh;
+  margin-bottom: 2rem;
 
-const WishlistLink = styled.a`
-  :link {
-    color: ${colors.lavender};
-    background-color: transparent;
-    text-decoration: none;
-  }
-  :visited {
-    color: ${colors.lavenderLight};
-    background-color: transparent;
-    text-decoration: none;
-  }
-  :hover {
-    color: ${colors.caramel};
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  :active {
-    color: ${colors.khaki};
-    background-color: transparent;
-    text-decoration: underline;
+  @media ${mediaFull} {
+    margin-right: 2rem;
   }
 `;

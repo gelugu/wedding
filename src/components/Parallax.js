@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import styled, { css } from "styled-components";
+import { mediaMobile } from "../styleConfig";
 
 export const Parallax = ({
   children,
@@ -58,13 +59,20 @@ const Wrapper = styled.div`
   ${(props) => css`
     background-image: url(${process.env.PUBLIC_URL + props.img});
   `}
+
+  @media ${mediaMobile} {
+    background-position-x: center;
+    background-size: auto;
+  }
 `;
 
 const ParallaxContent = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 95vh;
+
+  padding: 5vh 0;
   
   display: flex;
+  align-items: center;
   justify-content: center;
-
 `

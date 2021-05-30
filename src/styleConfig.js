@@ -9,3 +9,6 @@ export const colors = {
   caramel: "#92704d",
   coffee: "#af9270",
 };
+
+export const mediaMobile = "only screen and (max-width:320px)"
+export const mediaFull = "only screen and (min-width:320px)"

@@ -1,8 +1,7 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import styled from "styled-components";
-import { colors } from "../styleConfig";
-import { Content } from "./Content";
+import { colors, mediaMobile } from "../styleConfig";
 import { Wrapper } from "./Wrapper";
 
 const minuteSeconds = 60;
@@ -38,8 +37,8 @@ export const Timer = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <Wrapper style={{ flexDirection: "row", justifyContent: "space-around" }}>
-      <Content>
+    <Wrapper>
+      <TimerWrapper>
         <CountdownCircleTimer
           {...timerProps}
           colors={[[colors.khaki]]}
@@ -89,10 +88,24 @@ export const Timer = () => {
             renderTime("seconds", getTimeSeconds(elapsedTime))
           }
         </CountdownCircleTimer>
-      </Content>
+      </TimerWrapper>
     </Wrapper>
   );
 };
+
+const TimerWrapper = styled.div`
+  height: 70vh;
+  width: 50vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @media ${mediaMobile} {
+    height: 100vh;
+    flex-direction: column;
+  }
+`;
 
 const TimeWrapper = styled.div`
   display: flex;

@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import { mediaMobile } from "../styleConfig";
 
-export const Content = styled.div`
+export const Paragraph = styled.p`
   font-size: 1.3rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  padding: 2rem;
+  padding-bottom: 2rem;
 
   @media ${mediaMobile} {
     font-size: 1rem;
   }
+`;
+
+export const ParagraphBold = styled(Paragraph)`
+  font-weight: bold;
 `;
