@@ -14,7 +14,7 @@ export const Parallax = ({
 
     mainElement.addEventListener("scroll", scrollOnTop);
     return () => {
-      mainElement.addEventListener("scroll", scrollOnTop);
+      mainElement.removeEventListener("scroll", scrollOnTop);
     };
     // eslint-disable-next-line
   }, []);
