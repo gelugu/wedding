@@ -19,7 +19,7 @@ export const Chat = () => {
     <Wrapper className="chat">
       <Content>
         <Paragraph>
-          Если ты принимаешь наше приглашение, вступи, пожалуйста в{" "}
+          Если ты принимаешь наше приглашение, вступи пожалуйста в{" "}
           {createLink("чат")}.
         </Paragraph>
         {createLink(
