@@ -18,6 +18,7 @@ export const Actions = () => {
               опаздывать крайне нежелательно (вот прям совсем), а завтрак и
               речка вас в случае чего подождут.
             </Paragraph>
+            <Paragraph>Тайминг появится позже ;)</Paragraph>
           </Content>
         </Block>
       </Wrapper>
