@@ -1,18 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { mediaFull } from "../../styleConfig";
-import { Content } from "../Content";
-import { Link } from "../Link";
-import { Paragraph } from "../Paragraph";
+
 import { Wrapper } from "../Wrapper";
+import { Content } from "../Content";
+import { Paragraph } from "../Paragraph";
+import { mediaFull } from "../../styleConfig";
+import { createLink } from "../Link";
 
 export const Chat = () => {
   const chatLink = "https://t.me/joinchat/CgaTQgoztuphZGYy";
-
-  const createLink = (children) => (
-    <Link href={chatLink} target="_blank" rel="noopener noreferrer">
-      {children}
-    </Link>
+  const chatImage = (
+    <Image src={process.env.PUBLIC_URL + "qr-code-chat.svg"} alt="Chat"></Image>
   );
 
   return (
@@ -20,14 +18,9 @@ export const Chat = () => {
       <Content>
         <Paragraph>
           Если ты принимаешь наше приглашение, вступи пожалуйста в{" "}
-          {createLink("чат")}.
+          {createLink("чат", chatLink)}.
         </Paragraph>
-        {createLink(
-          <Image
-            src={process.env.PUBLIC_URL + "qr-code-chat.svg"}
-            alt="Chat"
-          ></Image>
-        )}
+        {createLink(chatImage, chatLink)}
       </Content>
     </Wrapper>
   );

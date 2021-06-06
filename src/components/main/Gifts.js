@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Wrapper } from "../Wrapper";
 import { Header } from "../Header";
 import { Content } from "../Content";
-import { Link } from '../Link'
+import { createLink } from "../Link";
 import { Paragraph } from "../Paragraph";
 import { mediaFull } from "../../styleConfig";
 
@@ -13,11 +13,11 @@ export const Gifts = () => {
     "spreadsheets/d/" +
     "1D-e85fXafwjx9FukgG92RlRimuEPN_64Out4IArYt5A/" +
     "edit?usp=sharing";
-
-  const createLink = (children) => (
-    <Link href={wishlistLink} target="_blank" rel="noopener noreferrer">
-      {children}
-    </Link>
+  const wishlistImage = (
+    <Image
+      src={process.env.PUBLIC_URL + "qr-code-gift.svg"}
+      alt="WishList"
+    ></Image>
   );
 
   return (
@@ -25,18 +25,14 @@ export const Gifts = () => {
       <Content>
         <Header>Что подарить?</Header>
         <Row>
-          {createLink(
-            <Image
-              src={process.env.PUBLIC_URL + "qr-code-gift.svg"}
-              alt="WishList"
-            ></Image>
-          )}
+          {createLink(wishlistImage, wishlistLink)}
           <Paragraph>
-            Вот {createLink("тут")} – наш вишлист. Пожалуйста, записывайте свои
-            имена напротив подарка, чтобы не дарить одно и то же. А еще можно с
-            кем-нибудь объединиться и подарить штуки вскладчину. Мы не будем
-            подглядывать, честно! Если у вас не так много денег, пожалуйста, не
-            стесняйтесь дарить нам песни, улыбки и проведённое вместе время❤️
+            Вот {createLink("тут", wishlistLink)} – наш вишлист. Пожалуйста,
+            записывайте свои имена напротив подарка, чтобы не дарить одно и то
+            же. А еще можно с кем-нибудь объединиться и подарить штуки
+            вскладчину. Мы не будем подглядывать, честно! Если у вас не так
+            много денег, пожалуйста, не стесняйтесь дарить нам песни, улыбки и
+            проведённое вместе время❤️
           </Paragraph>
         </Row>
       </Content>
