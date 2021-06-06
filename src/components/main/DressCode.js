@@ -1,9 +1,10 @@
 import React from "react";
-import { Wrapper } from "../Wrapper";
-import { Header } from "../Header";
-import { Content } from "../Content";
 import styled from "styled-components";
+
+import { Wrapper } from "../Wrapper";
+import { Content } from "../Content";
 import { Paragraph } from "../Paragraph";
+import { Header } from "../Header";
 import { createLink } from "../Link";
 
 export const DressCode = () => {

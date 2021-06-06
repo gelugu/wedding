@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+
 import { Invite } from "./main/Invite";
-import { Actions } from "./main/Actions";
-import { Alco } from "./main/Alco";
-import { Camp } from "./main/Camp";
 import { DressCode } from "./main/DressCode";
-import { Flowers } from "./main/Flowers";
+import { Camp } from "./main/Camp";
 import { Gifts } from "./main/Gifts";
-import { Timer } from "../components/Timer";
+import { Flowers } from "./main/Flowers";
+import { Alco } from "./main/Alco";
+import { Actions } from "./main/Actions";
 import { Chat } from "./main/Chat";
+import { Timer } from "../components/Timer";
 
 export const Main = () => {
   return (

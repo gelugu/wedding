@@ -1,13 +1,14 @@
 import React from "react";
-import { Wrapper } from "../Wrapper";
-import { Header } from "../Header";
-import { Content } from "../Content";
-import { Block } from "../Block";
-import { Parallax } from "../Parallax";
-import { Paragraph } from "../Paragraph";
-import { createLink } from "../Link";
 import styled from "styled-components";
+
+import { Wrapper } from "../Wrapper";
+import { Content } from "../Content";
+import { Paragraph } from "../Paragraph";
+import { Parallax } from "../Parallax";
+import { Header } from "../Header";
+import { Block } from "../Block";
 import { mediaFull } from "../../styleConfig";
+import { createLink } from "../Link";
 
 export const Flowers = () => {
   const flowersLink = "https://sluchaem.ru/action/8043";

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import styled, { css } from "styled-components";
+
 import { mediaMobile } from "../styleConfig";
 
 export const Parallax = ({
@@ -71,8 +72,8 @@ const ParallaxContent = styled.div`
   min-height: 95vh;
 
   padding: 5vh 0;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
-`
+`;

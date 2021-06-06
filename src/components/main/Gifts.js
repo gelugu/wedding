@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+
 import { Wrapper } from "../Wrapper";
-import { Header } from "../Header";
 import { Content } from "../Content";
-import { createLink } from "../Link";
 import { Paragraph } from "../Paragraph";
+import { Header } from "../Header";
+import { createLink } from "../Link";
 import { mediaFull } from "../../styleConfig";
 
 export const Gifts = () => {

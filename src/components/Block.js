@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { colors, mediaMobile } from "../styleConfig";
 
 export const Block = styled.div`

@@ -1,11 +1,12 @@
 import React from "react";
-import { Block } from "../Block";
+
+import { Wrapper } from "../Wrapper";
 import { Content } from "../Content";
-import { Header } from "../Header";
-import { createLink } from "../Link";
 import { Paragraph, ParagraphBold } from "../Paragraph";
 import { Parallax } from "../Parallax";
-import { Wrapper } from "../Wrapper";
+import { Header } from "../Header";
+import { Block } from "../Block";
+import { createLink } from "../Link";
 
 export const Invite = () => {
   const locationLink = "https://art-guslitsa.ru/about";

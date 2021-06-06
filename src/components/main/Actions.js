@@ -1,10 +1,11 @@
 import React from "react";
+
 import { Wrapper } from "../Wrapper";
-import { Header } from "../Header";
 import { Content } from "../Content";
-import { Parallax } from "../Parallax";
-import { Block } from "../Block";
 import { Paragraph } from '../Paragraph'
+import { Parallax } from "../Parallax";
+import { Header } from "../Header";
+import { Block } from "../Block";
 
 export const Actions = () => {
   return (

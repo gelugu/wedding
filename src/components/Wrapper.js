@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { mediaMobile } from "../styleConfig";
 
 export const Wrapper = styled.div`

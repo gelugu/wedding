@@ -1,8 +1,9 @@
 import React from "react";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import styled from "styled-components";
-import { colors, mediaMobile } from "../styleConfig";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+
 import { Wrapper } from "./Wrapper";
+import { colors, mediaMobile } from "../styleConfig";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;

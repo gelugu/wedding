@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { mediaMobile } from "../styleConfig";
 
 export const Paragraph = styled.p`
