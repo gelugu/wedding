@@ -4,8 +4,10 @@ import { Header } from "../Header";
 import { Content } from "../Content";
 import styled from "styled-components";
 import { Paragraph } from "../Paragraph";
+import { createLink } from "../Link";
 
 export const DressCode = () => {
+  const locationLink = "https://www.gismeteo.ru/weather-yegorevsk-4371/"
   return (
     <Wrapper className="dressCode">
       <Content>
@@ -18,7 +20,7 @@ export const DressCode = () => {
           неё нас ожидают танцы до утра:) Позаботьтесь о вещах на второй день
           (не забудьте купальник/плавки), возможно, стоит предусмотреть что-то
           тёплое на вечер и непромокаемое на случай дождя — смотрите прогноз
-          погоды в Егорьевске. Не думайте, что берёте лишнее — лучше запасные
+          погоды в {createLink("Егорьевске", locationLink)}. Не думайте, что берёте лишнее — лучше запасные
           вещички будут лежать у вас в номерах, чем не будут:) Пожалуйста,
           откажитесь от каблуков(!) Мы празднуем на природе и не хотим, чтобы
           ваш и наш праздничный настрой омрачался вывихами, мозолями и прочими
