@@ -6,6 +6,7 @@ import { Paragraph } from "../Paragraph";
 import { Parallax } from "../Parallax";
 import { Header } from "../Header";
 import { Block } from "../Block";
+import styled from "styled-components";
 
 export const Camp = () => {
   return (
@@ -30,8 +31,48 @@ export const Camp = () => {
               номера и в других блоках — вам не о чем волноваться.
             </Paragraph>
           </Content>
+          <Content>
+            <Header>Схема расселения:</Header>
+            <List>
+              <ListItem>1П - Алина Шмелева, Максим Широков</ListItem>
+              <ListItem>2П - Яна Болотенкова, Андрей Воробьев</ListItem>
+              <ListItem>
+                3П - Алена Резепова, Анна Аверина, Алла Батищева
+              </ListItem>
+              <ListItem>4П - Варвара Герасимова, Андрей Сорокин </ListItem>
+              <ListItem>5П - Глеб Кузнецов, Екатерина Рыжко </ListItem>
+              <ListItem>6П - Роман Артамонов, Милена Артамонова</ListItem>
+              <ListItem>7П - Светлана Лебедь, Анастасия Нефедова</ListItem>
+              <ListItem>
+                8П - Марина Клокова, Анна Голубева, Алина Баймамадова, Анастасия
+                Зиманкова
+              </ListItem>
+              <ListItem>9П - Дмитрий Шеломенцев, Шахноза Сарикова</ListItem>
+              <ListItem>10П - Татьяна Алексеева, Евгений Плотников</ListItem>
+              <ListItem>11П - Кирилл Антонов, Александр Милованов</ListItem>
+              <ListItem>12П - Виктор Аветисян, Глеб Поленок</ListItem>
+              <ListItem>Круглый дом: Злата Улитина, Михаил Краев</ListItem>
+
+              <ListItem>
+                Черепаха: Наталия Улитина, Андрей Улитин, Надежда Борисова, Анна
+                Манакова
+              </ListItem>
+            </List>
+          </Content>
         </Block>
       </Wrapper>
     </Parallax>
   );
 };
+
+const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const ListItem = styled.li`
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+`;
